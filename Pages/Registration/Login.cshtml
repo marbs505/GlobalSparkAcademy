@@ -1,0 +1,137 @@
+﻿@page
+@model Global_Spark_Academy.Pages.Registration.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<link href="~/css/input.css" rel="stylesheet" />
+
+<section>
+    <!-- Progress Bar -->
+    <div class="progress bg-dark" style="height: 5px; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+        <div class="progress-bar bg-light" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <span id="progressText" style="position: absolute; right: 10px; top: -20px; font-size: 12px; color: black;"></span>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-4" style="height: 70px; padding: 10px 15px;">
+            <div class="container">
+                <a class="navbar-brand" href="@Url.Content("~/Index")" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold;">Global Spark Academy</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white" href="@Url.Content("/Index")" style="font-size: 1rem;">Home</a>
+                        </li>
+                        <li class="nav-item ms-3 me-4">
+                            <a class="nav-link text-white" href="@Url.Content("~/Index/#scrollspyAbout")" style="font-size: 1rem;">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<div class="spacer" style="height: 50px; background-color: transparent; margin: 30px 0;"></div>
+
+<section>
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5 mt-5">
+        <div class="row align-items-center g-lg-5 py-5 mt-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 id="typingEffect" class="fw-bold display-2 mb-2 me-3" style="color: black; -webkit-text-fill-color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">
+                    <!-- Typing effect will be inserted here -->
+                </h1>
+                <br />
+                <p class="col-lg-10 fs-5" style="font-size: 1.1rem;">@Model.Descriptions?[0]</p>
+            </div>
+            <br />
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form method="post" class="p-4 p-md-5 border rounded-3 bg-light">
+                    <!-- Email Input -->
+                    <div class="col-12 mb-3">
+                        <div class="form-floating-border w-100">
+                            <input type="email" id="Email" placeholder=" " class="form-control" asp-for="Email" style="width: 100%;" />
+                            <label for="Email">Email Address</label>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="col-12 mb-3">
+                        <div class="form-floating-border w-100">
+                            <input type="password" id="Password" placeholder=" " class="form-control" asp-for="Password" style="width: 100%;" />
+                            <label for="Password">Password</label>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <!-- Remember Me Checkbox -->
+                    <div class="checkbox mb-3">
+                        <label style="font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" value="remember-me" asp-for="RememberMe"
+                                   class="form-check-input"
+                                   style="width: 1.5rem; height: 1.5rem;" />
+                            Remember me
+                        </label>
+                        <div class="invalid-feedback">You must accept the terms to continue.</div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <br />
+                    <button type="submit" class="w-100 btn btn-lg btn-outline-primary" style="font-size: 1rem;">Login</button>
+                    <hr class="my-4">
+                    <small class="text-muted" style="font-size: 0.9rem;">By clicking Login, you agree to the terms of use.</small>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const typingElement = document.getElementById("typingEffect");
+        const texts = [
+            "Login at Global Spark Academy!",
+            "Login as an Admin!",
+            "Login as a Super Admin!",
+            "Login as a Student!"
+        ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let currentText = "";
+        let typing = true;
+
+        function type() {
+            if (typing) {
+                currentText = texts[textIndex];
+                typingElement.textContent = currentText.substring(0, charIndex);
+                charIndex++;
+                if (charIndex > currentText.length) {
+                    typing = false;
+                    setTimeout(() => {
+                        typing = false;
+                    }, 1000);
+                }
+            } else {
+                charIndex--;
+                typingElement.textContent = currentText.substring(0, charIndex);
+                if (charIndex === 0) {
+                    typing = true;
+                    textIndex = (textIndex + 1) % texts.length;
+                }
+            }
+            setTimeout(type, typing ? 100 : 150);
+        }
+
+        type();
+    });
+</script>

@@ -1,0 +1,190 @@
+﻿@page
+@model GlobalSparkAcademy.Pages.Registration.SuperAdminRegistrationFormModel
+@{
+    ViewData["Title"] = "Super Admin Registration"; 
+}
+<link rel="stylesheet" href="@Url.Content("~/css/input.css")" />
+
+<section>
+    <div class="progress bg-dark" style="height: 5px; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+        <div class="progress-bar bg-light" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <span id="progressText" style="position: absolute; right: 10px; top: -20px; font-size: 12px; color: black;"></span>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-4" style="height: 70px; padding: 10px 15px;">
+            <div class="container">
+                <a class="navbar-brand" href="@Url.Content("~/Index")" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold;">Global Spark Academy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white" href="@Url.Content("/Index")" style="font-size: 1rem;">Home</a>
+                        </li>
+                        <li class="nav-item ms-3 me-4">
+                            <a class="nav-link text-white" href="@Url.Content("~/Index/#scrollspyAbout")" style="font-size: 1rem;">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<section>
+    <div class="container-fluid">
+        <div class="container d-flex justify-content-center flex-column align-items-center mt-5">
+            <br />
+            <h2 class="fw-bold display-4 text-center mt-5" style="color: black; -webkit-text-fill-color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">
+                Super Admin Registration Form
+            </h2>
+            <p class="lead text-center">Make sure you entered information very carefully on the forms.</p>
+        </div>
+
+        <!-- Form Card -->
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-lg-center">
+                <div class="col-12 col-lg-11">
+                    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <div class="mt-1 mb-3">
+                            <div class="alert alert-danger" role="alert">
+                                <h4 class="alert-heading">Duplicate Information Entry Detected</h4>
+                                <p>@Model.ErrorMessage</p>
+                                <hr />
+                                <p class="mb-2">
+                                    @Model.ArrayOfErrorMessages?[0]
+                                </p>
+                                <p class="mb-0">
+                                    @Model.ArrayOfErrorMessages?[1]
+                                </p>
+                            </div>
+                        </div>
+                    }
+                    <div class="bg-white border rounded shadow-sm overflow-hidden">
+                        <div class="p-4 p-xl-5 border-bottom">
+                            <h3 class="text-dark">Personal Information</h3>
+                            <p class="text-muted mb-0">Fields marked with <span class="text-danger">*</span> are required. Please complete all required fields accurately.</p>
+                            <hr />
+                        </div>
+
+                        <!-- Enrollment Form -->
+                        <form method="post" enctype="multipart/form-data">
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <!-- Personal Information Fields -->
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userFirstName" placeholder=" " required asp-for=FirstName />
+                                        <label for="userFirstName">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating-border flex-fill">
+                                        <input type="text" id="userLastName" placeholder=" " required asp-for=LastName />
+                                        <label for="userLastName">Last Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating-border flex-fill me-3 position-relative">
+                                        <select id="userGender" class="form-select pe-5" aria-label="Gender" asp-for=Gender>
+                                            <option value="" disabled selected>Select Gender</option>
+                                            @foreach (var gender in Model.Genders)
+                                            {
+                                                <option value="@gender">@gender</option>
+                                            }
+                                        </select>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down position-absolute top-50 translate-middle-y me-2" style="right: 10px;" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating-border flex-fill me-3 position-relative">
+                                        <select id="userStatus" class="form-select pe-5" aria-label="Status" asp-for=Status>
+                                            <option value="" disabled selected>Select Status</option>
+                                            @foreach (var status in Model.Statuses)
+                                            {
+                                                <option value="@status">@status</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 p-xl-5 border-top">
+                                <h3 class="text-dark">Current Address</h3>
+                                <p class="text-muted mb-0">Please enter your current residential address. Fields marked with <span class="text-danger">*</span> must be filled out accurately.</p>
+                            </div>
+                            <hr />
+
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userStreetUnit" placeholder=" " asp-for=Address required />
+                                        <label for="userStreetUnit">Full Address (Strictly Required)</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 p-xl-5 border-top">
+                                <h3 class="text-dark">Contact Details</h3>
+                                <p class="text-muted mb-0">Provide your contact information, ensuring all fields marked with <span class="text-danger">*</span> are completed properly for reliable communication.</p>
+                            </div>
+                            <hr />
+
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="email" id="userEmail" placeholder=" " asp-for=EmailAddress required />
+                                        <label for="userEmail">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userMobileNumber" placeholder=" " asp-for=MobileNumber required />
+                                        <label for="userMobileNumber">Mobile Number</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <div class="col-12 col-md-6">
+                                    <label for="profile" class="form-label mb-1">Upload Profile Picture <span class="text-danger">*</span></label>
+                                    <div class="form-floating-border flex-fill me-2">
+                                        <input type="file"
+                                               id="profile"
+                                               class="form-control"
+                                               name="profile"
+                                               accept=".jpg,.jpeg,.png,.jpg"
+                                               aria-label="profile"
+                                               placeholder=" "
+                                               required
+                                               asp-for=Profile>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <label for="password" class="form-label mb-1">Password <span class="text-danger">*</span></label>
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="password" id="password" placeholder=" " name="Password" asp-for=Password required />
+                                        <label for="Password">Password</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 p-xl-5 border-top">
+                                <button type="submit" class="btn btn-outline-dark">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

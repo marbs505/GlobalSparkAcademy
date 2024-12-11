@@ -1,0 +1,115 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GlobalSparkAcademy
+build_property.RootNamespace = GlobalSparkAcademy
+build_property.ProjectDir = C:\Users\marvi\Desktop\Global Spark Academy\GlobalSparkAcademy\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\marvi\Desktop\Global Spark Academy\GlobalSparkAcademy
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Enrollment Pages/ABMEnrollmentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudCBQYWdlc1xBQk1FbnJvbGxtZW50UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Enrollment Pages/HUMSSEnrollmentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudCBQYWdlc1xIVU1TU0Vucm9sbG1lbnRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Enrollment Pages/SelectStrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudCBQYWdlc1xTZWxlY3RTdHJhbmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Enrollment Pages/SMAWEnrollmentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudCBQYWdlc1xTTUFXRW5yb2xsbWVudFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Enrollment Pages/STEMEnrollmentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudCBQYWdlc1xTVEVNRW5yb2xsbWVudFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Payment Pages/ABMPaymentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudCBQYWdlc1xBQk1QYXltZW50UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Payment Pages/AcknowledgementPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudCBQYWdlc1xBY2tub3dsZWRnZW1lbnRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Payment Pages/HUMSSPaymentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudCBQYWdlc1xIVU1TU1BheW1lbnRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Payment Pages/SMAWPaymentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudCBQYWdlc1xTTUFXUGF5bWVudFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Payment Pages/STEMPaymentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudCBQYWdlc1xTVEVNUGF5bWVudFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Registration/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Registration/SuperAdminRegistrationForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uXFN1cGVyQWRtaW5SZWdpc3RyYXRpb25Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Student/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Super Admin/Controls Pages/STEM/STEMEditSection/STEMGrade11FirstSemesterEditPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXIgQWRtaW5cQ29udHJvbHMgUGFnZXNcU1RFTVxTVEVNRWRpdFNlY3Rpb25cU1RFTUdyYWRlMTFGaXJzdFNlbWVzdGVyRWRpdFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Super Admin/Controls Pages/STEM/STEMGrade11FirstSemester.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXIgQWRtaW5cQ29udHJvbHMgUGFnZXNcU1RFTVxTVEVNR3JhZGUxMUZpcnN0U2VtZXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Super Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXIgQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marvi/Desktop/Global Spark Academy/GlobalSparkAcademy/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1xu8xb9ei2

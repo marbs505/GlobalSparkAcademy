@@ -1,0 +1,80 @@
+﻿/* Container for the form */
+.form-floating-border {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+    /* Input field styles */
+    .form-floating-border input {
+        width: 100%;
+        padding: 12px 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: transparent;
+        outline: none;
+        color: #000;
+        transition: border 0.3s ease;
+    }
+
+    /* Floating label styles */
+    .form-floating-border label {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        font-size: 16px;
+        color: #666;
+        background: #fff; /* Matches the form's background for a clean look */
+        padding: 0 4px;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    /* Highlight border and move label on focus */
+    .form-floating-border input:focus {
+        border: 1px solid #007bff; /* Highlight border with a color */
+    }
+
+        .form-floating-border input:focus + label,
+        .form-floating-border input:not(:placeholder-shown) + label {
+            top: -10px;
+            font-size: 12px;
+            color: #007bff;
+        }
+
+/* Optional: Form container styling */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff; /* Ensure the form is white regardless of body styling */
+}
+
+/* Style for the select element */
+.form-floating-border select {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+    outline: none;
+    color: #000;
+    transition: border 0.3s ease;
+    appearance: none; /* Removes the default browser styling for select dropdowns */
+}
+
+    /* Label styling for the select */
+    .form-floating-border select:focus {
+        border: 1px solid #007bff; /* Highlight border color */
+    }
+
+        .form-floating-border select:focus + label,
+        .form-floating-border select:not(:placeholder-shown) + label {
+            top: -10px;
+            font-size: 12px;
+            color: #007bff;
+        }

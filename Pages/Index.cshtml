@@ -1,0 +1,284 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Progress Bar -->
+<section>
+    <div class="progress bg-dark" style="height: 5px; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+        <div class="progress-bar bg-light" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <span id="progressText" style="position: absolute; right: 10px; top: -20px; font-size: 12px; color: black;"></span>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark border-bottom box-shadow fixed-top" style="height: 70px; padding: 10px 15px;">
+            <div class="container">
+                <!-- Brand name -->
+                <a class="navbar-brand" href="#" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold;">Global Spark Academy</a>
+
+                <!-- Navbar toggler for responsive design -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white" href="#scrollspyHome" style="font-size: 1rem;">Home</a>
+                        </li>
+                        <li class="nav-item ms-3 me-4">
+                            <a class="nav-link text-white" href="#scrollspyAbout" style="font-size: 1rem;">About</a>
+                        </li>
+                        <li class="nav-item ms-1">
+                            <a class="btn btn-outline-light" href="@Url.Content("/Registration/Login")" style="font-size: 1rem;">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<!-- Banner -->
+<section data-aos="#" id="scrollspyHome">
+    <div class="d-flex min-vh-100"
+         lc-helper="background"
+         style="background-image: url('@Url.Content("/images/MaangasNaBanner.jpg")');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-color: #444;
+                background-blend-mode: overlay;">
+        <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+            <div class="lc-block mb-4" data-aos="zoom-in">
+                <div editable="rich">
+                    <h1 id="hero-title" class="display-1 fw-bolder" style="color: white;">Global Spark Academy</h1>
+                </div>
+            </div>
+
+            <div class="lc-block" data-aos="fade-in">
+                <div editable="rich">
+                    <p class="lead">@Model.Descriptions[0]</p>
+                </div>
+            </div>
+
+            <div class="lc-block" data-aos="fade-up">
+                <svg class="scroll-icon"
+                     onclick="if (!document.querySelector('body').classList.contains('livecanvas-is-editing')) this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth' });"
+                     width="4em"
+                     height="4em"
+                     viewBox="0 0 16 16"
+                     fill="currentColor"
+                     xmlns="http://www.w3.org/2000/svg"
+                     lc-helper="svg-icon"
+                     style="transition: transform 0.3s ease, fill 0.3s ease; cursor: pointer;"
+                     onmouseover="this.style.transform='scale(1.1)'; this.style.fill='#FFD700';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.fill='currentColor';">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                    <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="spacer" style="height: 50px; background-color: transparent; margin: 30px 0;"></div>
+
+
+<section>
+    <div class="container-fluid">
+        <section data-aos="fade-right" data-aos-delay="300" class="mb-3" id="enrollment-management">
+            <div class="container" id="scrollspyAbout">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4" data-aos="fade-up">
+                        <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                            <img src="@Url.Content("/images/Student Enrollment.png")"
+                                 class="card-img-top"
+                                 alt="Student Enrollment"
+                                 style="height: 200px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <h5 class="card-title fw-bold">Student Enrollment</h5>
+                                <p class="card-text">Manage your enrollment process effortlessly with our user-friendly platform.</p>
+                                <a href="@Url.Content("~/Enrollment Pages/SelectStrand")" class="btn btn-outline-dark">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                            <img src="@Url.Content("/images/Dashboard.jpg")"
+                                 class="card-img-top"
+                                 alt="Admin Dashboard"
+                                 style="height: 200px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <h5 class="card-title fw-bold">Admin Dashboard</h5>
+                                <p class="card-text">Access all enrollment data and manage student applications with ease.</p>
+                                <a href="@Url.Content("Registration/Login")" class="btn btn-outline-dark">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card" style="display: flex; flex-direction: column; height: 100%;">
+                            <img src="@Url.Content("/images/Super Admin.png")"
+                                 class="card-img-top"
+                                 alt="Super Admin Tools"
+                                 style="height: 200px; object-fit: cover;">
+                            <div class="card-body" style="flex-grow: 1;">
+                                <h5 class="card-title fw-bold">Super Admin</h5>
+                                <p class="card-text">Oversee all aspects of the enrollment system, including user management and reports.</p>
+                                <a href="@Url.Content("Registration/SuperAdminRegistrationForm")" class="btn btn-outline-dark">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer" style="height: 50px; background-color: transparent; margin: 30px 0;"></div>
+
+        <section data-aos="fade-left" data-aos-delay="600">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 p-xxl-5" data-aos="fade-right">
+                        <div class="lc-block">
+                            <div editable="rich">
+                                <h1 class="fw-bold">@Model.Titles[1]</h1>
+                            </div>
+                        </div>
+                        <div class="lc-block">
+                            <div editable="rich">
+                                <p>@Model.Descriptions[1]</p>
+                                <a href="@Url.Content("~/Enrollment Pages/SelectStrand")" type="button" class="btn btn-outline-dark mb-4">Start Enrollment!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="lc-block">
+                            <img class="img-fluid" src="@Url.Content("/images/Streamlined Enrollment.png")" alt="Enrollment Management">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacer" style="height: 50px; background-color: transparent; margin: 30px 0;"></div>
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 p-xxl-5 order-md-2" data-aos="fade-right">
+                        <div class="lc-block">
+                            <div editable="rich">
+                                <h1 class="fw-bold">@Model.Titles[2]</h1>
+                            </div>
+                        </div>
+                        <div class="lc-block">
+                            <div editable="rich">
+                                <p>@Model.Descriptions[2]</p>
+                                <a href="#feature-2" class="btn btn-outline-dark mb-4">Apply Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="lc-block">
+                            <img class="img-fluid" src="@Url.Content("images/Student Portal Photo.png")" alt="Application System">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacer" style="height: 50px; background-color: transparent; margin: 30px 0;"></div>
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 p-xxl-5" data-aos="fade-right">
+                        <div class="lc-block">
+                            <div editable="rich">
+                                <h1 class="fw-bold">@Model.Titles[3]</h1>
+                            </div>
+                        </div>
+                        <div class="lc-block">
+                            <div editable="rich">
+                                <p>@Model.Descriptions[3]</p>
+                                <a href="@Url.Content("/Registration/Login")" class="btn btn-outline-dark mb-4">View Reports</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="lc-block">
+                            <img class="img-fluid" src="@Url.Content("images/Insightful Reporting and Analytics.jpg")" alt="Reporting & Analytics">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacer" style="height: 50px; background-color: transparent; margin: 30px 0;"></div>
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 p-xxl-5 order-md-2" data-aos="fade-right">
+                        <div class="lc-block">
+                            <div editable="rich">
+                                <h1 class="fw-bold">@Model.Titles[4]</h1>
+                            </div>
+                        </div>
+                        <div class="lc-block">
+                            <div editable="rich">
+                                <p>@Model.Descriptions[4]</p>
+                                <button type="button" class="btn btn-outline-dark mb-4" data-toggle="modal" data-target="#exampleModalLong">Learn More</button>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">About Comprehensive Student Management</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            @Model.Descriptions[5]
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="lc-block">
+                            <img class="img-fluid" src="@Url.Content("images/Comprehensive Enrollment Management Photo.png")" alt="Student Management">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+
+<div class="spacer" style="height: 50px; background-color: transparent; margin: 30px 0;"></div>
+
+
+<!-- Footer -->
+<section>
+    <div class="container-fluid">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="@Url.Content("~/Index")" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/Index/#scrollspyAbout")" class="nav-link px-2 text-body-secondary">About</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/Enrollment Pages/SelectStrand")" class="nav-link px-2 text-body-secondary">Enrollment</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/Registration/Login")" class="nav-link px-2 text-body-secondary">Student</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/Registration/Login")" class="nav-link px-2 text-body-secondary">Admin</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/Registration/Login")" class="nav-link px-2 text-body-secondary">Super Admin</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 Global Spark, Academy</p>
+        </footer>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

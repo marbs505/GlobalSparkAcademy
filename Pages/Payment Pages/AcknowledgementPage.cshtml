@@ -1,0 +1,32 @@
+﻿@page
+@model GlobalSparkAcademy.Pages.Payment_Pages.AcknowledgementPageModel
+@{
+    string thankYouText = "thank you!".ToUpper();
+    string descriptionText = "Thanks a bunch for filling that out. It means a lot to us, just like you do! We really appreciate you giving us a moment of your time today. Thanks for being you.";
+    ViewData["Title"] = "Acknowledgement Page";
+}
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="text-center p-4 bg-white rounded-0 shadow-none" style="max-width: 600px;">
+        <h2 class="fw-bold display-2 text-center" style="color: black; -webkit-text-fill-color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">
+            @thankYouText
+        </h2>
+        <div class="my-4 text-success" style="font-size: 4rem;">
+            <a href="@Url.Content("/Index")" type="button" class="btn" style="border: none; background: transparent; cursor: pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     style="transition: transform 0.3s ease, filter 0.3s ease;"
+                     onmouseover="this.style.filter='hue-rotate(90deg)'; this.style.transform='scale(1.1)';"
+                     onmouseout="this.style.filter='none'; this.style.transform='scale(1);'">
+                    <path d="M20 6L9 17l-5-5" />
+                </svg>
+            </a>
+        </div>
+        <p class="fs-5 text-secondary">@descriptionText</p>
+        <p class="text-muted mt-4">Copyright ©2024 | All Rights Reserved</p>
+    </div>
+</div>

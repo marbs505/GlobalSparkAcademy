@@ -1,0 +1,13 @@
+CREATE TABLE SuperAdminRegistrations (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    FirstName NVARCHAR(50) NOT NULL,
+    LastName NVARCHAR(50) NOT NULL,
+    Gender NVARCHAR(20) NOT NULL,
+    Status NVARCHAR(20) NOT NULL,
+    ProfileImage NVARCHAR(MAX),
+    EmailAddress NVARCHAR(100) NOT NULL,
+    MobileNumber NVARCHAR(15) NOT NULL,
+    Address NVARCHAR(255) NOT NULL,
+    Password NVARCHAR(255) NOT NULL,
+    CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
+);

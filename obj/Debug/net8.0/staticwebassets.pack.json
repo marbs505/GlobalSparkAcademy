@@ -1,0 +1,593 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GlobalSparkAcademy.bundle.scp.css",
+      "PackagePath": "staticwebassets\\GlobalSparkAcademy.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\ABM Files\\BirthCertificate\\e5050622-13d9-4ad0-8489-23a99feb1f1f_436622673_1386953759363498_7714843056562806039_n.jpg",
+      "PackagePath": "staticwebassets\\ABM Files\\BirthCertificate\\e5050622-13d9-4ad0-8489-23a99feb1f1f_436622673_1386953759363498_7714843056562806039_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\ABM Files\\Form137\\c5488b8a-d3a4-4195-a2e5-24580f1c51f2_450240250_122129238620304436_9074115571803722020_n.jpg",
+      "PackagePath": "staticwebassets\\ABM Files\\Form137\\c5488b8a-d3a4-4195-a2e5-24580f1c51f2_450240250_122129238620304436_9074115571803722020_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\ABM Files\\Form138\\fa7b6aab-b185-424a-98b3-1d27d3fbf22b_450596946_893756236109951_118184446443228779_n.jpg",
+      "PackagePath": "staticwebassets\\ABM Files\\Form138\\fa7b6aab-b185-424a-98b3-1d27d3fbf22b_450596946_893756236109951_118184446443228779_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\ABM Files\\IDPicture\\00ff1864-32c4-470e-8f83-2debb864ecbb_450221533_500675675853670_8166199830101351401_n.jpg",
+      "PackagePath": "staticwebassets\\ABM Files\\IDPicture\\00ff1864-32c4-470e-8f83-2debb864ecbb_450221533_500675675853670_8166199830101351401_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\ABM Files\\ReportCard\\b5f543f6-044e-423d-9489-ec57f51783f5_1366x768-black-solid-color-background.jpg",
+      "PackagePath": "staticwebassets\\ABM Files\\ReportCard\\b5f543f6-044e-423d-9489-ec57f51783f5_1366x768-black-solid-color-background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\BirthCertificate\\45ab4301-8e39-4944-8957-4fa83ec46a11_449215336_1015857036601341_5426315866567793367_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\BirthCertificate\\45ab4301-8e39-4944-8957-4fa83ec46a11_449215336_1015857036601341_5426315866567793367_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\BirthCertificate\\6309d078-147f-450e-8784-c00559eba27e_363415859_6535147539886204_5228841192217770038_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\BirthCertificate\\6309d078-147f-450e-8784-c00559eba27e_363415859_6535147539886204_5228841192217770038_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\BirthCertificate\\8048e3f9-51f2-4956-b47a-7e1a30b83b39_449215336_1015857036601341_5426315866567793367_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\BirthCertificate\\8048e3f9-51f2-4956-b47a-7e1a30b83b39_449215336_1015857036601341_5426315866567793367_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\Form137\\10f1ed99-7575-4e08-a5f1-fc4655e38e22_363415859_6535147539886204_5228841192217770038_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\Form137\\10f1ed99-7575-4e08-a5f1-fc4655e38e22_363415859_6535147539886204_5228841192217770038_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\Form137\\4869a9ea-8d59-4e3a-a7af-91f85ffdb573_449170110_1098321061864462_6097215903390832770_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\Form137\\4869a9ea-8d59-4e3a-a7af-91f85ffdb573_449170110_1098321061864462_6097215903390832770_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\Form137\\653a822c-0b3f-4598-9278-00f7fd6bf7d2_450240250_122129238620304436_9074115571803722020_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\Form137\\653a822c-0b3f-4598-9278-00f7fd6bf7d2_450240250_122129238620304436_9074115571803722020_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\Form138\\1d4accde-a0c1-440a-8c27-958b9e512d50_450471292_1084090926820796_4427696208147915588_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\Form138\\1d4accde-a0c1-440a-8c27-958b9e512d50_450471292_1084090926820796_4427696208147915588_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\Form138\\447c233f-e4d5-40e1-89f9-bd4a6470bbf1_450420883_7794658197297194_3077019850586172177_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\Form138\\447c233f-e4d5-40e1-89f9-bd4a6470bbf1_450420883_7794658197297194_3077019850586172177_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\Form138\\af682d5b-a060-4d88-9e63-bc1e1bcfbe24_449215336_1015857036601341_5426315866567793367_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\Form138\\af682d5b-a060-4d88-9e63-bc1e1bcfbe24_449215336_1015857036601341_5426315866567793367_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\IDPicture\\9ba196d6-74c5-4273-9690-fc58f54d0525_450471292_1084090926820796_4427696208147915588_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\IDPicture\\9ba196d6-74c5-4273-9690-fc58f54d0525_450471292_1084090926820796_4427696208147915588_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\IDPicture\\e9861645-2eef-4138-bb16-970ce95c9f68_448076066_940870091060717_7294896733671195778_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\IDPicture\\e9861645-2eef-4138-bb16-970ce95c9f68_448076066_940870091060717_7294896733671195778_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\IDPicture\\eba9d895-9b78-400c-a126-5a8004b1a441_62d5c548-dc59-4150-bb5e-86455335d09c.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\IDPicture\\eba9d895-9b78-400c-a126-5a8004b1a441_62d5c548-dc59-4150-bb5e-86455335d09c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\ReportCard\\1fd4e252-ffc3-4058-9501-115dbc49fb68_363415859_6535147539886204_5228841192217770038_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\ReportCard\\1fd4e252-ffc3-4058-9501-115dbc49fb68_363415859_6535147539886204_5228841192217770038_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\ReportCard\\7ead92d9-cfcb-4b7f-aa08-b0b3c228f47f_450385612_1219621582362793_5775188866623251562_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\ReportCard\\7ead92d9-cfcb-4b7f-aa08-b0b3c228f47f_450385612_1219621582362793_5775188866623251562_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\HUMSS Files\\ReportCard\\a31d7f49-af97-4e60-a4cf-6ec689b4e470_449215336_1015857036601341_5426315866567793367_n.jpg",
+      "PackagePath": "staticwebassets\\HUMSS Files\\ReportCard\\a31d7f49-af97-4e60-a4cf-6ec689b4e470_449215336_1015857036601341_5426315866567793367_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\SMAW Files\\BirthCertificate\\9ca7fa1d-3e90-4979-8221-01ede27ea291_450534379_473792898680292_5953094041842972172_n.jpg",
+      "PackagePath": "staticwebassets\\SMAW Files\\BirthCertificate\\9ca7fa1d-3e90-4979-8221-01ede27ea291_450534379_473792898680292_5953094041842972172_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\SMAW Files\\Form137\\00dcdc8b-9e9b-4acb-a626-1bac517c5529_450731434_355052067631740_7716961407816909136_n.jpg",
+      "PackagePath": "staticwebassets\\SMAW Files\\Form137\\00dcdc8b-9e9b-4acb-a626-1bac517c5529_450731434_355052067631740_7716961407816909136_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\SMAW Files\\Form138\\689074c1-b66f-4e7d-b9b2-7f35c5ecd248_450633146_10160804828864678_1144530829494339162_n.jpg",
+      "PackagePath": "staticwebassets\\SMAW Files\\Form138\\689074c1-b66f-4e7d-b9b2-7f35c5ecd248_450633146_10160804828864678_1144530829494339162_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\SMAW Files\\IDPicture\\4cf197b9-992d-4f43-a014-72a573c4ac29_450872636_999484025169618_148527959550475522_n.jpg",
+      "PackagePath": "staticwebassets\\SMAW Files\\IDPicture\\4cf197b9-992d-4f43-a014-72a573c4ac29_450872636_999484025169618_148527959550475522_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\SMAW Files\\ReportCard\\f54694c8-74a8-4ebe-b9b9-4c78929e91df_363415859_6535147539886204_5228841192217770038_n.jpg",
+      "PackagePath": "staticwebassets\\SMAW Files\\ReportCard\\f54694c8-74a8-4ebe-b9b9-4c78929e91df_363415859_6535147539886204_5228841192217770038_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\BirthCertificate\\74ee5453-4a26-49d5-acc6-89c106c299af_363415859_6535147539886204_5228841192217770038_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\BirthCertificate\\74ee5453-4a26-49d5-acc6-89c106c299af_363415859_6535147539886204_5228841192217770038_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\BirthCertificate\\98790447-b232-4da2-8f4f-3e0a8cd5ef86_451123683_368209822961817_1180717028054370282_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\BirthCertificate\\98790447-b232-4da2-8f4f-3e0a8cd5ef86_451123683_368209822961817_1180717028054370282_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\BirthCertificate\\a4420e90-83cf-4544-8642-628de3dd1262_449215336_1015857036601341_5426315866567793367_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\BirthCertificate\\a4420e90-83cf-4544-8642-628de3dd1262_449215336_1015857036601341_5426315866567793367_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\BirthCertificate\\ceea2706-e274-4ee1-91fa-960727b28645_62d5c548-dc59-4150-bb5e-86455335d09c.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\BirthCertificate\\ceea2706-e274-4ee1-91fa-960727b28645_62d5c548-dc59-4150-bb5e-86455335d09c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\Form137\\100ca25d-d532-4dd1-9a6c-a9540718d08a_449170110_1098321061864462_6097215903390832770_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\Form137\\100ca25d-d532-4dd1-9a6c-a9540718d08a_449170110_1098321061864462_6097215903390832770_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\Form137\\37d2fcf7-9d12-474f-8a5b-344c09e0b9e0_450534379_473792898680292_5953094041842972172_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\Form137\\37d2fcf7-9d12-474f-8a5b-344c09e0b9e0_450534379_473792898680292_5953094041842972172_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\Form137\\3e2f1df9-ce36-4015-92c1-4ca805bbc05c_450872636_999484025169618_148527959550475522_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\Form137\\3e2f1df9-ce36-4015-92c1-4ca805bbc05c_450872636_999484025169618_148527959550475522_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\Form137\\ff574d58-065d-4508-ab84-c304f2381fc6_449215336_1015857036601341_5426315866567793367_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\Form137\\ff574d58-065d-4508-ab84-c304f2381fc6_449215336_1015857036601341_5426315866567793367_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\Form138\\714a6594-8e1a-4626-b96f-be282d70a4bd_449401839_122164537874206440_3161998159013466644_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\Form138\\714a6594-8e1a-4626-b96f-be282d70a4bd_449401839_122164537874206440_3161998159013466644_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\Form138\\985a871c-02c1-4875-8ddb-0242cc8ee6ff_449215336_1015857036601341_5426315866567793367_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\Form138\\985a871c-02c1-4875-8ddb-0242cc8ee6ff_449215336_1015857036601341_5426315866567793367_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\Form138\\a31f07eb-ffa7-460e-9c6b-9e759c1c7b93_450939165_122128698506286970_886452123893186503_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\Form138\\a31f07eb-ffa7-460e-9c6b-9e759c1c7b93_450939165_122128698506286970_886452123893186503_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\Form138\\ff3969cd-79c8-474b-962f-d78f2771c801_449215336_1015857036601341_5426315866567793367_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\Form138\\ff3969cd-79c8-474b-962f-d78f2771c801_449215336_1015857036601341_5426315866567793367_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\IDPicture\\20040639-29a1-4287-9a15-263d3623058c_450928549_468555469274819_6353908821936907139_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\IDPicture\\20040639-29a1-4287-9a15-263d3623058c_450928549_468555469274819_6353908821936907139_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\IDPicture\\205c7c2e-e743-4f78-8082-122ef4ad44f2_363415859_6535147539886204_5228841192217770038_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\IDPicture\\205c7c2e-e743-4f78-8082-122ef4ad44f2_363415859_6535147539886204_5228841192217770038_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\IDPicture\\4212c62e-c64d-4ef9-ae28-fe4921b7a85d_450892040_449486281314014_5918122317493982988_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\IDPicture\\4212c62e-c64d-4ef9-ae28-fe4921b7a85d_450892040_449486281314014_5918122317493982988_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\IDPicture\\9d1ec0d9-34ea-436f-8b91-596ad48f830a_449170110_1098321061864462_6097215903390832770_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\IDPicture\\9d1ec0d9-34ea-436f-8b91-596ad48f830a_449170110_1098321061864462_6097215903390832770_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\ReportCard\\846283c3-100e-42e8-9b5a-837e45b6e32c_449215336_1015857036601341_5426315866567793367_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\ReportCard\\846283c3-100e-42e8-9b5a-837e45b6e32c_449215336_1015857036601341_5426315866567793367_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\ReportCard\\8e9b59e4-f59d-43e5-a5d1-e3840437e6ca_450809279_807290158186415_1040399710261968371_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\ReportCard\\8e9b59e4-f59d-43e5-a5d1-e3840437e6ca_450809279_807290158186415_1040399710261968371_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\ReportCard\\9d64c7bd-9e4a-4d67-b84d-50ac7203a8e6_62d5c548-dc59-4150-bb5e-86455335d09c.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\ReportCard\\9d64c7bd-9e4a-4d67-b84d-50ac7203a8e6_62d5c548-dc59-4150-bb5e-86455335d09c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\STEM Files\\ReportCard\\ce3a790e-1627-4f84-bfba-0979e039f357_436622673_1386953759363498_7714843056562806039_n.jpg",
+      "PackagePath": "staticwebassets\\STEM Files\\ReportCard\\ce3a790e-1627-4f84-bfba-0979e039f357_436622673_1386953759363498_7714843056562806039_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\Super Admin Files\\Introduction to C#.jpg",
+      "PackagePath": "staticwebassets\\Super Admin Files\\Introduction to C#.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\css\\dashboard cards\\dashboardcards.css",
+      "PackagePath": "staticwebassets\\css\\dashboard cards\\dashboardcards.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\css\\input.css",
+      "PackagePath": "staticwebassets\\css\\input.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\css\\sidebar.css",
+      "PackagePath": "staticwebassets\\css\\sidebar.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\ABM.jpg",
+      "PackagePath": "staticwebassets\\images\\ABM.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\Comprehensive Enrollment Management Photo.png",
+      "PackagePath": "staticwebassets\\images\\Comprehensive Enrollment Management Photo.png"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\Dashboard.jpg",
+      "PackagePath": "staticwebassets\\images\\Dashboard.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\HUMSS.jpg",
+      "PackagePath": "staticwebassets\\images\\HUMSS.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\Insightful Reporting and Analytics.jpg",
+      "PackagePath": "staticwebassets\\images\\Insightful Reporting and Analytics.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\MaangasNaBanner.jpg",
+      "PackagePath": "staticwebassets\\images\\MaangasNaBanner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\Maya-Bank-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\Maya-Bank-logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\SMAW.jpg",
+      "PackagePath": "staticwebassets\\images\\SMAW.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\STEM.jpg",
+      "PackagePath": "staticwebassets\\images\\STEM.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\Streamlined Enrollment.png",
+      "PackagePath": "staticwebassets\\images\\Streamlined Enrollment.png"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\Student Enrollment.png",
+      "PackagePath": "staticwebassets\\images\\Student Enrollment.png"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\Student Portal Photo.png",
+      "PackagePath": "staticwebassets\\images\\Student Portal Photo.png"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\Super Admin.png",
+      "PackagePath": "staticwebassets\\images\\Super Admin.png"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\gcash logo.webp",
+      "PackagePath": "staticwebassets\\images\\gcash logo.webp"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\paypal logo.jpg",
+      "PackagePath": "staticwebassets\\images\\paypal logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\images\\school logo.png",
+      "PackagePath": "staticwebassets\\images\\school logo.png"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\js\\PaymentFormValidator.js",
+      "PackagePath": "staticwebassets\\js\\PaymentFormValidator.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\js\\PaymentValidator.js",
+      "PackagePath": "staticwebassets\\js\\PaymentValidator.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-Black.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\Roboto\\Roboto-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\lib\\Roboto\\Roboto-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\marvi\\Desktop\\Global Spark Academy\\GlobalSparkAcademy\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GlobalSparkAcademy.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GlobalSparkAcademy.props",
+      "PackagePath": "build\\GlobalSparkAcademy.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GlobalSparkAcademy.props",
+      "PackagePath": "buildMultiTargeting\\GlobalSparkAcademy.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GlobalSparkAcademy.props",
+      "PackagePath": "buildTransitive\\GlobalSparkAcademy.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

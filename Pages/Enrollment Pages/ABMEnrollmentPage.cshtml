@@ -1,0 +1,484 @@
+﻿@page
+@model GlobalSparkAcademy.Pages.Enrollment_Pages.ABMEnrollmentPageModel
+@{
+}
+<link rel="stylesheet" href="@Url.Content("~/css/input.css")" />
+
+<section>
+    <div class="progress bg-dark" style="height: 5px; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+        <div class="progress-bar bg-light" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <span id="progressText" style="position: absolute; right: 10px; top: -20px; font-size: 12px; color: black;"></span>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-4" style="height: 70px; padding: 10px 15px;">
+            <div class="container">
+                <a class="navbar-brand" href="@Url.Content("~/Index")" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold;">Global Spark Academy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white" href="@Url.Content("/Index")" style="font-size: 1rem;">Home</a>
+                        </li>
+                        <li class="nav-item ms-3 me-4">
+                            <a class="nav-link text-white" href="@Url.Content("~/Enrollment Pages/SelectStrand")" style="font-size: 1rem;">Return</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<div class="spacer" style="height: 20px; background-color: transparent; margin: 20px 0;"></div>
+
+<section>
+    <div class="container-fluid">
+        <div class="container d-flex justify-content-center flex-column align-items-center mt-5">
+            <h2 class="fw-bold display-4 text-center" style="color: black; -webkit-text-fill-color: white; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;">
+                ABM Enrollment Form
+            </h2>
+            <p class="lead text-center">Make sure you entered information very carefully on the forms.</p>
+        </div>
+
+        <!-- Form Card -->
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-lg-center">
+                <div class="col-12 col-lg-11">
+                    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <div class="mt-1 mb-3">
+                            <div class="alert alert-danger" role="alert">
+                                <h4 class="alert-heading">Duplicate Information Entry Detected</h4>
+                                <p>@Model.ErrorMessage</p>
+                                <hr />
+                                <p class="mb-2">
+                                    @Model.ArrayOfErrorMessages?[0]
+                                </p>
+                                <p class="mb-0">
+                                    @Model.ArrayOfErrorMessages?[1]
+                                </p>
+                            </div>
+                        </div>
+                    }
+                    <div class="bg-white border rounded shadow-sm overflow-hidden">
+                        <div class="p-4 p-xl-5 border-bottom">
+                            <h3 class="text-dark">Personal Information</h3>
+                            <p class="text-muted mb-0">Fields marked with <span class="text-danger">*</span> are required. Please complete all required fields accurately.</p>
+                            <hr />
+                        </div>
+
+                        <!-- Enrollment Form -->
+                        <form method="post" enctype="multipart/form-data">
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <!-- Personal Information Fields -->
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userFirstName" placeholder=" " required asp-for=FirstName />
+                                        <label for="userFirstName">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userMiddleName" placeholder=" " required asp-for=MiddleName />
+                                        <label for="userMiddleName">Middle Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill">
+                                        <input type="text" id="userLastName" placeholder=" " required asp-for=LastName />
+                                        <label for="userLastName">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userSuffixName" placeholder=" " asp-for=SuffixName />
+                                        <label for="userSuffixName">Suffix Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3 position-relative">
+                                        <select id="userGender" class="form-select pe-5" aria-label="Gender" asp-for=Gender>
+                                            <option value="" disabled selected>Select Gender</option>
+                                            @foreach (var genders in Model.Genders)
+                                            {
+                                                <option value="@genders">@genders</option>
+                                            }
+                                        </select>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down position-absolute top-50 translate-middle-y me-2" style="right: 10px;" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3 position-relative">
+                                        <select id="userStatus" class="form-select pe-5" aria-label="Status" asp-for=Status>
+                                            <option value="" disabled selected>Select Status</option>
+                                            @foreach (var statuses in Model.Statuses)
+                                            {
+                                                <option value="@statuses">@statuses</option>
+                                            }
+                                        </select>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down position-absolute top-50 translate-middle-y me-2" style="right: 10px;" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userCitizenship" placeholder=" " required asp-for=Citizenship />
+                                        <label for="userCitizenship">Citizenship</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="date"
+                                               id="dob"
+                                               class="form-control"
+                                               name="DateOfBirth"
+                                               aria-label="Date of Birth"
+                                               placeholder=" "
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userBirthPlace" placeholder=" " asp-for=Birthplace />
+                                        <label for="userBirthPlace">Birth Place</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Current Address Section -->
+                            <div class="p-4 p-xl-5 border-top">
+                                <h3 class="text-dark">Current Address</h3>
+                                <p class="text-muted mb-0">Please enter your current residential address. Fields marked with <span class="text-danger">*</span> must be filled out accurately.</p>
+                            </div>
+                            <hr />
+
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userStreetUnit" placeholder=" " asp-for=Street />
+                                        <label for="userStreetUnit">Street # / Unit #</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userStreet" placeholder=" " asp-for=Street />
+                                        <label for="userStreet">Street</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userSubdivision" placeholder=" " asp-for=Subdivision />
+                                        <label for="userSubdivision">Subdivision / Village / BLDG</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userBarangay" placeholder=" " asp-for=Barangay />
+                                        <label for="userBarangay">Barangay (Optional)</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userCityMunicipality" placeholder=" " asp-for=City />
+                                        <label for="userCityMunicipality">City / Municipality</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userProvince" placeholder=" " asp-for=Province />
+                                        <label for="userProvince">Province</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userZipCode" placeholder=" " asp-for=ZipCode />
+                                        <label for="userZipCode">Zip Code</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contact Details Section -->
+                            <div class="p-4 p-xl-5 border-top">
+                                <h3 class="text-dark">Contact Details</h3>
+                                <p class="text-muted mb-0">Provide your contact information, ensuring all fields marked with <span class="text-danger">*</span> are completed properly for reliable communication.</p>
+                            </div>
+                            <hr />
+
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="email" id="userEmail" placeholder=" " pattern="@Model.EmailPattern" asp-for=Email />
+                                        <label for="userEmail">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userMobileNumber" placeholder=" " pattern="@Model.MobilePattern" asp-for=MobileNumber />
+                                        <label for="userMobileNumber">Mobile Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userTelephoneNumber" placeholder=" " asp-for=TelephoneNumber />
+                                        <label for="userTelephoneNumber">Telephone Number (Optional)</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Guardian Information -->
+                            <div class="p-4 p-xl-5 border-top">
+                                <h3 class="text-dark">Guardian Contact Information</h3>
+                                <p class="text-muted mb-0">Please provide the guardian's contact information. Ensure all required fields marked with <span class="text-danger">*</span> are completed accurately for reliable communication.</p>
+                            </div>
+                            <hr />
+
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <!-- Guardian's Name -->
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userGuardianFullName" placeholder=" " asp-for=GuardianName />
+                                        <label for="userGuardianFullName">Guardian's Full Name</label>
+                                    </div>
+                                </div>
+
+                                <!-- Guardian's Email Address -->
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="email" id="userGuardianEmail" placeholder=" " pattern="@Model.EmailPattern" asp-for=GuardianEmail />
+                                        <label for="userGuardianEmail">Guardian's Email Address</label>
+                                    </div>
+                                </div>
+
+                                <!-- Guardian's Mobile Number -->
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userGuardianMobileNumber" placeholder=" " pattern="@Model.MobilePattern" asp-for=GuardianMobileNumber />
+                                        <label for="userGuardianMobileNumber">Guardian's Mobile Number</label>
+                                    </div>
+                                </div>
+
+                                <!-- Guardian's Telephone Number (Optional) -->
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userGuardianTelephoneNumber" placeholder=" " asp-for=GuardianTelephoneNumber />
+                                        <label for="userGuardianTelephoneNumber">Guardian's Telephone Number (Optional)</label>
+                                    </div>
+                                </div>
+
+                                <!-- Guardian's Occupation -->
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userGuardianOccupation" placeholder=" " asp-for=GuardianOccupation />
+                                        <label for="userGuardianOccupation">Guardian's Occupation</label>
+                                    </div>
+                                </div>
+
+                                <!-- Guardian's Company (Optional) -->
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userGuardianCompany" placeholder=" " asp-for=GuardianCompany />
+                                        <label for="userGuardianCompany">Guardian's Company (Optional)</label>
+                                    </div>
+                                </div>
+
+                                <!-- Guardian's Relationship to Student -->
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userGuardianRelationship" placeholder=" " asp-for=GuardianRelationship />
+                                        <label for="userGuardianRelationship">Guardian's Relationship to Student</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Document Upload Section -->
+                            <div class="p-4 p-xl-5 border-top">
+                                <h3 class="text-dark">Document Upload</h3>
+                                <p class="text-muted mb-0">Please upload the following required documents:</p>
+                                <ul>
+                                    <li>Birth Certificate (Required)</li>
+                                    <li>Report Card from the Previous School (Required)</li>
+                                    <li>Good Moral Character Certificate (Required)</li>
+                                    <li>2x2 ID Picture (Required)</li>
+                                    <li>Form 137 (Required)</li>
+                                    <li>Form 138 (Required)</li>
+                                </ul>
+                            </div>
+                            <hr />
+
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <div class="col-12 col-md-6">
+                                    <label for="birth_certificate" class="form-label">Upload Birth Certificate <span class="text-danger">*</span></label>
+                                    <div class="form-floating-border flex-fill me-1">
+                                        <input type="file"
+                                               id="birth_certificate"
+                                               class="form-control"
+                                               name="BirthCertificate"
+                                               accept=".pdf,.jpg,.jpeg,.png"
+                                               aria-label="Upload Birth Certificate"
+                                               placeholder=" "
+                                               required
+                                               asp-for=BirthCertificate>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="report_card" class="form-label">Upload Report Card <span class="text-danger">*</span></label>
+                                    <div class="form-floating-border flex-fill me-2">
+                                        <input type="file"
+                                               id="report_card"
+                                               class="form-control"
+                                               name="ReportCard"
+                                               accept=".pdf,.jpg,.jpeg,.png"
+                                               aria-label="Report Card"
+                                               placeholder=" "
+                                               required
+                                               asp-for=ReportCard>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="good_moral_character" class="form-label">Upload Good Moral Character Certificate <span class="text-danger">*</span></label>
+                                    <div class="form-floating-border flex-fill me-2">
+                                        <input type="file"
+                                               id="good_moral_character"
+                                               class="form-control"
+                                               name="GoodMoralCertificate"
+                                               accept=".pdf,.jpg,.jpeg,.png"
+                                               aria-label="Good Moral Certificate"
+                                               placeholder=" "
+                                               required
+                                               asp-for=GoodMoralCharacter>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="id_picture" class="form-label">Upload 2x2 ID Picture <span class="text-danger">*</span></label>
+                                    <div class="form-floating-border flex-fill me-2">
+                                        <input type="file"
+                                               id="id_picture"
+                                               class="form-control"
+                                               name="IdPicture"
+                                               accept=".jpg,.jpeg,.png"
+                                               aria-label="Id Picture"
+                                               placeholder=" "
+                                               required
+                                               asp-for=IDPicture>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="form137" class="form-label">Form 137 <span class="text-danger">*</span></label>
+                                    <div class="form-floating-border flex-fill me-2">
+                                        <input type="file"
+                                               id="form137"
+                                               class="form-control"
+                                               name="Form137"
+                                               accept=".pdf,.jpg,.jpeg,.png"
+                                               aria-label="Form 137"
+                                               placeholder=" "
+                                               required
+                                               asp-for=Form137>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="form138" class="form-label">Form 138 <span class="text-danger">*</span></label>
+                                    <div class="form-floating-border flex-fill me-2">
+                                        <input type="file"
+                                               id="form138"
+                                               class="form-control"
+                                               name="Form138"
+                                               accept=".pdf,.jpg,.jpeg,.png"
+                                               aria-label="Form 138"
+                                               placeholder=" "
+                                               required
+                                               asp-for=Form138>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 p-xl-5 border-top">
+                                <h3 class="text-dark">Select Year Level & Semester</h3>
+                                <p class="text-muted mb-0">Choose your current year level and semester. All required fields marked with <span class="text-danger">*</span> must be completed accurately.</p>
+                            </div>
+                            <hr />
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3 position-relative">
+                                        <select id="userYearLevel" class="form-select pe-5" aria-label="Year Level" asp-for=SelectedYearLevel>
+                                            <option value="" disabled selected>Select Year Level</option>
+                                            @foreach (var yearLevel in Model.YearLevels)
+                                            {
+                                                <option value="@yearLevel">@yearLevel</option>
+                                            }
+                                        </select>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down position-absolute top-50 translate-middle-y me-2" style="right: 10px;" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3 position-relative">
+                                        <select id="userSemester" class="form-select pe-5" aria-label="Semester" asp-for=SelectedSemester>
+                                            <option value="" disabled selected>Select Semester</option>
+                                            @foreach (var semester in Model.Semesters)
+                                            {
+                                                <option value="@semester">@semester</option>
+                                            }
+                                        </select>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down position-absolute top-50 translate-middle-y me-2" style="right: 10px;" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 p-xl-5 border-top">
+                                <h3 class="text-dark">Set up your Account</h3>
+                                <p class="text-muted mb-0">Create your account by entering the necessary information. Make sure to fill in all required fields marked with <span class="text-danger">*</span> correctly.</p>
+                            </div>
+                            <hr />
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userAccountFirstName" placeholder=" " asp-for=AccountFirstName />
+                                        <label for="userAccountFirstName">Account First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userAccountLastName" placeholder=" " asp-for=AccountLastName />
+                                        <label for="userAccountLastName">Account Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="email" id="userAccountEmail" placeholder=" " pattern="@Model.EmailPattern" asp-for=AccountEmail />
+                                        <label for="userAccountEmail">Guardian's Email Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="text" id="userAccountMobileNumber" placeholder=" " name="AccountMobile" pattern="@Model.MobilePattern" asp-for=AccountMobile />
+                                        <label for="userAccountMobileNumber">Account Mobile Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="form-floating-border flex-fill me-3">
+                                        <input type="password" id="userAccountPassword" placeholder=" " name="AccountPassword" asp-for=AccountPassword />
+                                        <label for="userAccountPassword">Account Password</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Submit Button -->
+                            <div class="p-4 p-xl-5 border-top">
+                                <button type="submit" class="btn btn-outline-dark" href="@Url.Content("/Payment Pages/ABMPaymentPage")">Proceed to Payment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

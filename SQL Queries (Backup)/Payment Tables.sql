@@ -1,0 +1,51 @@
+CREATE TABLE ABMPaymentTable (
+    PaymentId INT PRIMARY KEY IDENTITY(1,1),
+    StrandName NVARCHAR(100) NOT NULL,
+    YearLevel NVARCHAR(50) NULL,
+    Semester NVARCHAR(50) NULL,
+    FirstName NVARCHAR(100) NOT NULL,
+    LastName NVARCHAR(100) NOT NULL,
+    PayorsName NVARCHAR(100) NULL,
+    Email NVARCHAR(100) NOT NULL,
+    AmountPaid DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE HUMSSPaymentTable (
+    PaymentId INT PRIMARY KEY IDENTITY(1,1),
+    StrandName NVARCHAR(100) NOT NULL,
+    YearLevel NVARCHAR(50) NULL,
+    Semester NVARCHAR(50) NULL,
+    FirstName NVARCHAR(100) NOT NULL,
+    LastName NVARCHAR(100) NOT NULL,
+    PayorsName NVARCHAR(100) NULL,
+    Email NVARCHAR(100) NOT NULL,
+    AmountPaid DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE SMAWPaymentTable (
+    PaymentId INT PRIMARY KEY IDENTITY(1,1),
+    StrandName NVARCHAR(100) NOT NULL,
+    YearLevel NVARCHAR(50) NULL,
+    Semester NVARCHAR(50) NULL,
+    FirstName NVARCHAR(100) NOT NULL,
+    LastName NVARCHAR(100) NOT NULL,
+    PayorsName NVARCHAR(100) NULL,
+    Email NVARCHAR(100) NOT NULL,
+    AmountPaid DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE STEMPaymentTable (
+    PaymentID INT PRIMARY KEY IDENTITY(1,1),
+    StrandName NVARCHAR(100) NOT NULL,
+    YearLevel NVARCHAR(50) NOT NULL,
+    Semester NVARCHAR(50) NOT NULL,
+    FirstName NVARCHAR(100) NOT NULL,
+    LastName NVARCHAR(100) NOT NULL,
+    PayorsName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) NOT NULL,
+    AmountPaid DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATETIME DEFAULT GETDATE()
+);

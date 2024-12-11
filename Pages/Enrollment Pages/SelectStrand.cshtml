@@ -1,0 +1,128 @@
+﻿@page
+@model Global_Spark_Academy.Pages.Enrollment_Pages.SelectStrandModel
+@{
+    ViewData["Title"] = "Select Strand";
+}
+
+<section>
+    <!-- Progress Bar -->
+    <div class="progress bg-dark" style="height: 5px; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+        <div class="progress-bar bg-light" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <span id="progressText" style="position: absolute; right: 10px; top: -20px; font-size: 12px; color: black;"></span>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark border-bottom box-shadow fixed-top" style="height: 70px; padding: 10px 15px;">
+            <div class="container">
+                <a class="navbar-brand" href="@Url.Content("~/Index")" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold;">Global Spark Academy</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link text-white" href="@Url.Content("~/Index")" style="font-size: 1rem;">Home</a>
+                        </li>
+                        <li class="nav-item ms-3 me-4">
+                            <a class="nav-link text-white" href="@Url.Content("~/Index/#scrollspyAbout")" style="font-size: 1rem;">About</a>
+                        </li>
+                        <li class="nav-item ms-1">
+                            <a class="btn btn-outline-light" href="@Url.Content("/Registration/Login")" style="font-size: 1rem;">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<!-- First Strand -->
+<section data-aos="fade-up" class="aos-init aos-animate">
+    <div class="d-flex min-vh-100 mt-5" lc-helper="background" style="background-image: url('@Url.Content("~/images/STEM.jpg")'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-color: #444; background-blend-mode: overlay;">
+        <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+            <h1 id="hero-title" class="display-3 fw-bolder" data-aos="fade-up">@Model.Strands?[0].Title</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem;">@Model.Strands?[0].Description</p>
+            <a href="@Url.Content("~/Enrollment Pages/STEMEnrollmentPage")" class="btn btn-custom mt-2"
+               style="background-color: transparent; border: 2px solid white; color: white; padding: 10px 30px; font-size: 1.2rem; text-decoration: none;"
+               data-aos="fade-up" data-aos-delay="200"
+               onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.1)'; this.style.borderColor='white'; this.style.color='white';"
+               onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='white'; this.style.color='white';">
+                Enroll Now!
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Second Strand -->
+<section data-aos="fade-up" class="aos-init aos-animate">
+    <div class="d-flex min-vh-100" lc-helper="background" style="background-image: url('@Url.Content("~/images/ABM.jpg")'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-color: #444; background-blend-mode: overlay;">
+        <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+            <h1 id="hero-title" class="display-3 fw-bolder" data-aos="fade-up">@Model.Strands?[1].Title</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem;">@Model.Strands?[1].Description</p>
+            <a href="@Url.Content("~/Enrollment Pages/ABMEnrollmentPage")" class="btn btn-custom mt-2"
+               style="background-color: transparent; border: 2px solid white; color: white; padding: 10px 30px; font-size: 1.2rem; text-decoration: none;"
+               data-aos="fade-up" data-aos-delay="200"
+               onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.1)'; this.style.borderColor='white'; this.style.color='white';"
+               onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='white'; this.style.color='white';">
+                Enroll Now!
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Third Strand -->
+<section data-aos="fade-up" class="aos-init aos-animate">
+    <div class="d-flex min-vh-100" lc-helper="background" style="background-image: url('@Url.Content("~/images/HUMSS.jpg")'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-color: #444; background-blend-mode: overlay;">
+        <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+            <h1 id="hero-title" class="display-3 fw-bolder" data-aos="fade-up">@Model.Strands?[2].Title</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem;">@Model.Strands?[2].Description</p>
+            <a href="@Url.Content("~/Enrollment Pages/HUMSSEnrollmentPage")" class="btn btn-custom mt-2"
+               style="background-color: transparent; border: 2px solid white; color: white; padding: 10px 30px; font-size: 1.2rem; text-decoration: none;"
+               data-aos="fade-up" data-aos-delay="200"
+               onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.1)'; this.style.borderColor='white'; this.style.color='white';"
+               onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='white'; this.style.color='white';">
+                Enroll Now!
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Fourth Strand -->
+<section data-aos="fade-up" class="aos-init aos-animate">
+    <div class="d-flex min-vh-100" lc-helper="background" style="background-image: url('@Url.Content("~/images/SMAW.jpg")'); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-color: #444; background-blend-mode: overlay;">
+        <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+            <h1 id="hero-title" class="display-3 fw-bolder" data-aos="fade-up">@Model.Strands?[3].Title</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem;">@Model.Strands?[3].Description</p>
+            <a href="@Url.Content("~/Enrollment Pages/SMAWEnrollmentPage")" class="btn btn-custom mt-2"
+               style="background-color: transparent; border: 2px solid white; color: white; padding: 10px 30px; font-size: 1.2rem; text-decoration: none;"
+               data-aos="fade-up" data-aos-delay="200"
+               onmouseover="this.style.backgroundColor='rgba(255, 255, 255, 0.1)'; this.style.borderColor='white'; this.style.color='white';"
+               onmouseout="this.style.backgroundColor='transparent'; this.style.borderColor='white'; this.style.color='white';">
+                Enroll Now!
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<section>
+    <div class="container-fluid">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="@Url.Content("~/Index")" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/#scrollspyAbout")" class="nav-link px-2 text-body-secondary">About</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/Enrollment Pages/SelectStrand")" class="nav-link px-2 text-body-secondary">Enrollment</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/Registration/Login")" class="nav-link px-2 text-body-secondary">Student</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/Registration/Login")" class="nav-link px-2 text-body-secondary">Admin</a></li>
+                <li class="nav-item"><a href="@Url.Content("~/Registration/Login")" class="nav-link px-2 text-body-secondary">Super Admin</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 Global Spark, Academy</p>
+        </footer>
+    </div>
+</section>
